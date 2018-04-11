@@ -1,0 +1,41 @@
+let header={
+
+    "default":[
+    	{
+            "id":"digital-school",
+            "menuName":"学校基础数据",
+            "permissions":"SHUXIAO_DC",
+            "isShow":false,
+            "isSelected":false
+        },
+    	{
+			"id":"course-arrange",
+			"menuName":"排课管理",
+            "permissions":"SHUXIAO_CS",
+            "isShow":false,
+            "isSelected":false
+        },
+        {
+            "id":"office-admin",
+            "menuName":"行政办公",
+            "permissions":"SHUXIAO_AS",
+            "isShow":false,
+            "isSelected":false
+        },
+        {
+            "id":"moral-manage",
+            "menuName":"素质评价",
+            "permissions":"SHUXIAO_QE",
+            "isShow":false,
+            "isSelected":false
+        },
+        {
+            "id":"anything-manage",
+             "menuName":"总务后勤",
+             "permissions":"SHUXIAO_LO",
+             "isShow":false,
+             "isSelected":false
+        }
+    ]
+}
+export default  header;
