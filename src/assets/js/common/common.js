@@ -62,7 +62,7 @@ var Rxports = {
 	},
 	//登陆验证
 	isLogin:function(callback,scope){
-		  jsonp('http://223.202.64.204:50484',{timeout:3000,name:'callbackHandler'},function(err,data){
+		  jsonp(conf.URL.CHECK_LOGIN,{timeout:3000,name:'callbackHandler'},function(err,data){
 		  	if(data && data.status=="loginsuccess"){
 		  		callback.call(scope,data);
 		  	}else{

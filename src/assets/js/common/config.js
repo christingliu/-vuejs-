@@ -1,17 +1,18 @@
+const ipAdress='124.207.145.166';
 const Rxports = {
 	URL:{
-    	SSO_LOGIN   : 'http://223.202.64.204:9212/login',//单点登录
-        SSO_LOGOUT  : 'http://223.202.64.204:9212/logout',//单点退出
-        REGISTER    : 'http://223.202.64.204:50442/index.mvc',//注册
+    	SSO_LOGIN   : 'http://${ipAdress}:9212/login',//单点登录
+        SSO_LOGOUT  : 'http://${ipAdress}:9212/logout',//单点退出
+        REGISTER    : 'http://${ipAdress}:50442/index.mvc',//注册
         INDEX       : 'http://localhost:9013/',//数校首页
-        CHECK_LOGIN : 'http://223.202.64.204:50484',//检查是否登陆及得到登陆信息
-        SETUSER     : 'http://223.202.64.204:50484/setuser.jsp',//设置登录
+        CHECK_LOGIN : 'http://${ipAdress}:50484',//检查是否登陆及得到登陆信息
+        SETUSER     : 'http://${ipAdress}:50484/setuser.jsp',//设置登录
         AUTHORIZATION:"/json/authorization/?",
         //"/doc/mock2.json?",//用户权限
         // "authorization": "/json/authorization/", //用户权限
-        EXPORT     : 'http://223.202.64.204:50441/reps/dm/tempimport/studentlist.mvc',//新生导入
-        EXPORT_TEACHER:'http://223.202.64.204:50441/reps/dm/tempimport/teacherlist.mvc?orgTypes=21,31,34,51',//教职工的导入
-        EXPORT_PARENT:'http://223.202.64.204:50441/reps/school/executeimport/parentlist.mvc',//家长的导入
+        EXPORT     : 'http://${ipAdress}:50441/reps/dm/tempimport/studentlist.mvc',//新生导入
+        EXPORT_TEACHER:'http://${ipAdress}:50441/reps/dm/tempimport/teacherlist.mvc?orgTypes=21,31,34,51',//教职工的导入
+        EXPORT_PARENT:'http://${ipAdress}:50441/reps/school/executeimport/parentlist.mvc',//家长的导入
         IMPORT_SALARY_ADDRESS:'http://www.baidu.com'//导入工资下载模板的地址
     },
     //本地存储key(暂时没用)
